@@ -15,20 +15,19 @@
 </head>
 <body>
 
-<div data-role="page">
-
+<!-- first 'page' -->
+<section data-role="page" id="first">
 	<div data-role="header">
-		<h1>Page Title</h1>
+		<h1>First</h1>
 	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<p>Page content goes here.</p>
+	<div data-role="content">
+		<p>This page is first in the code so it loads first.</p>
+		<p>Go to the <a href="#" data-transition="slide">second page.</a></p>
 	</div><!-- /content -->
-
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>Footer</h4>
 	</div><!-- /footer -->
-</div><!-- /page -->
+</section><!-- /page -->
 
 </body>
 </html>
