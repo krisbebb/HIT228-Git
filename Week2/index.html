@@ -22,9 +22,23 @@
 	</div><!-- /header -->
 	<div data-role="content">
 		<p>This page is first in the code so it loads first.</p>
-		<p>Go to the <a href="#" data-transition="slide">second page.</a></p>
+		<p>Go to the <a href="#second" data-transition="slide">second page.</a></p>
 	</div><!-- /content -->
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
+		<h4>Footer</h4>
+	</div><!-- /footer -->
+</section><!-- /page -->
+
+<!-- second 'page' -->
+<section data-role="page" id="second">
+	<div data-role="header">
+		<h1>Second</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+		<p>Now you've arrived at the second page.</p>
+		<p>Go back to the <a href="#first" data-transition="slide" data-direction="reverse">first page.</a></p>
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed">
 		<h4>Footer</h4>
 	</div><!-- /footer -->
 </section><!-- /page -->
