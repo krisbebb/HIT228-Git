@@ -18,28 +18,53 @@
 <!-- first 'page' -->
 <section data-role="page" id="first">
 	<div data-role="header">
-		<h1>First</h1>
+		<h1>Quiz Time</h1>
 	</div><!-- /header -->
 	<div data-role="content">
-		<p>This page is first in the code so it loads first.</p>
-		<p>Go to the <a href="#second" data-transition="slide">second page.</a></p>
+		<p>Game Instructions here</p>
+		<p>Welcome to Quiz Time. Try and beat the high score!</p>
+	  <a href="#game" data-role="button" data-transition="slide">Play Quiz Time!</a>
+		<a href="#highscores" data-role="button" data-transition="slide">View High Scores</a>
+
 	</div><!-- /content -->
 	<div data-role="footer" data-position="fixed">
-		<h4>Footer</h4>
+		<h4>&copy; Kris Bebbington</h4>
 	</div><!-- /footer -->
 </section><!-- /page -->
 
-<!-- second 'page' -->
-<section data-role="page" id="second">
+<!-- game 'page' -->
+<section data-role="page" id="game">
 	<div data-role="header">
-		<h1>Second</h1>
+		<h1>Good Luck!</h1>
 	</div><!-- /header -->
 	<div data-role="content">
-		<p>Now you've arrived at the second page.</p>
-		<p>Go back to the <a href="#first" data-transition="slide" data-direction="reverse">first page.</a></p>
+		<p>Answer these questions</p>
+		<a href="#first" data-transition="slide" data-role="button" data-direction="reverse">Home</a>
 	</div><!-- /content -->
 	<div data-role="footer" data-position="fixed">
-		<h4>Footer</h4>
+		<h4>&copy; Kris Bebbington</h4>
+	</div><!-- /footer -->
+</section><!-- /page -->
+
+<!-- highscores 'page' -->
+<section data-role="page" id="highscores">
+	<div data-role="header">
+		<h1>High Scores</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+		<p>Top 5 Quiz Time Players</p>
+		<ol data-role="listview" data-inset="true">
+			<li>Player Name</li>
+			<li>Player Name</li>
+			<li>Player Name</li>
+			<li>Player Name</li>
+			<li>Player Name</li>
+		</ol>
+
+		<a href="#first" data-transition="slide" data-role="button" data-direction="reverse">Home</a>
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; Kris Bebbington</h4>
 	</div><!-- /footer -->
 </section><!-- /page -->
 
